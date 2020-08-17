@@ -27,9 +27,9 @@ app.post('/mews', (req,res) => {
         };
         mews
             .insert(mew)
-            .then( createdMew => {
-                res.json(createdMew);
-            });
+            .then( createdMew => 
+                {res.json(createdMew)}
+            );
     } else {
         res.status(422);
         res.json({
