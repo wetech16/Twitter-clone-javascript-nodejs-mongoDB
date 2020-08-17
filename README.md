@@ -64,13 +64,13 @@ With the following features:
 
 * [x] npm install cors
 * [X] Make sure the server is recieving the data
-* [ ] Add JSON body parser middleware
-* [ ] Validate name and content
-  * [ ] Must be a string
-  * [ ] Cannot be empty
-* [ ] If not valid
-  * [ ] Error code 422
-  * [ ] Invalid mew, must contain name and content
+* [x] Add JSON body parser middleware
+* [x] Validate name and content
+  * [x] Must be a string
+  * [x] Cannot be empty
+* [x] If not valid
+  * [x] Error code 422
+  * [x] Invalid mew, must contain name and content
 * [ ] Setup DB Connection
   * [ ] npm install monk
   * [ ] connect to db

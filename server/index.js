@@ -8,9 +8,25 @@ app.get('/', (req,res) => {
         message: 'mew!Nodemon'
     });
 });
+function isValidMew (mew) {
+    return mew.content && mew.content.toString().trim() !== '' &&
+    mew.name && mew.name.toString().trim() !== '';
+}
 
 app.post('/mews', (req,res) => {
-    console.log(req.body);
+    if (isValidMew(req.body)) {
+        //insert into db...
+        const mew = {
+            name: req.body.name.toString(),
+            content: req.body.content.toString()
+        };
+        console.log(mew);
+    } else {
+        res.status(422);
+        res.json({
+            message: 'Hey! Name and Content are required!'
+        });
+    }
 })
 
 app.listen(5000, () => {
