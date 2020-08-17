@@ -38,8 +38,8 @@ With the following features:
   * [x] u-full-width to both inputs
 * [x] Listen for form submit
 * [x] Hide the form
-* [ ] Show loading spinner
-* [ ] Get data from form and log it
+* [X] Show loading spinner
+* [X] Get data from form and log it
 * ✅ Get user input on the Client
 * ✅ Hide/Show elements on the client
 
