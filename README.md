@@ -26,12 +26,12 @@ With the following features:
 
 ## Front-end
 
-* [ ] Create client folder
-* [ ] Setup index.html
-* [ ] Bring in Skeleton CSS
+* [x] Create client folder
+* [x] Setup index.html
+* [x] Bring in Skeleton CSS
   * http://getskeleton.com/
   * https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css
-* [ ] Create Header
+* [x] Create Header
 * [ ] Create form
   * [ ] Name
   * [ ] Content
