@@ -47,7 +47,7 @@ With the following features:
 
 * [X] Create server folder
 * [x] npm init -y
-* [ ] npm install express morgan
+* [x] npm install express morgan
 * [ ] Setup index.js
 * [ ] Add GET / route
 * [ ] Add POST /mews route
