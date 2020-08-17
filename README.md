@@ -50,7 +50,7 @@ With the following features:
 * [x] npm install express morgan
 * [x] Setup index.js
 * [x] Add GET / route
-* [ ] Add nodemon: live server for node server: npm i --save-dev nodemon
+* [x] Add nodemon: live server for node server: npm i --save-dev nodemon; script: "dev": "nodemon index.js"; npm run dev
 * [ ] Add POST /mews route
   * [ ] log out req.body
 
