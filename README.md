@@ -32,10 +32,10 @@ With the following features:
   * http://getskeleton.com/
   * https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css
 * [x] Create Header
-* [ ] Create form
-  * [ ] Name
-  * [ ] Content
-  * [ ] u-full-width to both inputs
+* [x] Create form
+  * [x] Name
+  * [x] Content
+  * [x] u-full-width to both inputs
 * [ ] Listen for form submit
 * [ ] Hide the form
 * [ ] Show loading spinner
