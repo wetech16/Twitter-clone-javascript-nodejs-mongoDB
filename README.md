@@ -62,8 +62,8 @@ With the following features:
 
 ## Back-end
 
-* [ ] npm install cors
-* [ ] Make sure the server is recieving the data
+* [x] npm install cors
+* [X] Make sure the server is recieving the data
 * [ ] Add JSON body parser middleware
 * [ ] Validate name and content
   * [ ] Must be a string
