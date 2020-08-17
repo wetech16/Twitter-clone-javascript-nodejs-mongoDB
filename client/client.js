@@ -1,7 +1,7 @@
-
 const form = document.querySelector('form');
 const loading = document.querySelector('.loading');
-const API_URL ='http://localhost:5000/mews'
+const API_URL ='http://localhost:5000/mews';
+
 
 loading.style.display = "none";
 
@@ -25,9 +25,8 @@ form.addEventListener('submit', (event) => {
             headers: {
                 'content-type': 'application/json'
             }
-        }
-        ).then(response => response.json())
-        .then(createdMew => {
-            console.log(createdMew);
-        });
+        }).then(response => response.json())
+            .then (createdMew => {
+                console.log(createdMew);
+            });
 })
