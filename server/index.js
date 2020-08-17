@@ -7,6 +7,10 @@ app.get('/', (req,res) => {
     });
 });
 
+app.post('/mews', (req,res) => {
+    console.log(req.body);
+})
+
 app.listen(5000, () => {
     console.log('Listening on localhost:5000')
 })
