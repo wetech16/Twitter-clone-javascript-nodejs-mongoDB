@@ -1,4 +1,7 @@
 const form = document.querySelector('form');
+const loading = document.querySelector('.loading');
+
+loading.style.display = "none";
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -11,4 +14,6 @@ form.addEventListener('submit', (event) => {
         content
     }
     console.log(mew);
+    form.style.display = 'none';
+    loading.style.display = "";
 })

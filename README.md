@@ -37,7 +37,7 @@ With the following features:
   * [x] Content
   * [x] u-full-width to both inputs
 * [x] Listen for form submit
-* [ ] Hide the form
+* [x] Hide the form
 * [ ] Show loading spinner
 * [ ] Get data from form and log it
 * ✅ Get user input on the Client
