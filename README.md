@@ -46,7 +46,7 @@ With the following features:
 ## Back-end
 
 * [X] Create server folder
-* [ ] npm init -y
+* [x] npm init -y
 * [ ] npm install express morgan
 * [ ] Setup index.js
 * [ ] Add GET / route
