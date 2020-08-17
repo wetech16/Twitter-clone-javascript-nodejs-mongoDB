@@ -1,6 +1,11 @@
 const express = require('express');
 const app = express();
 const cors = require('cors');
+const monk = require('monk')
+
+const db = monk('localhost/meower');
+const mews = db.get('mews');
+
 app.use(cors());
 app.use(express.json());
 app.get('/', (req,res) => {
@@ -15,12 +20,16 @@ function isValidMew (mew) {
 
 app.post('/mews', (req,res) => {
     if (isValidMew(req.body)) {
-        //insert into db...
         const mew = {
             name: req.body.name.toString(),
-            content: req.body.content.toString()
+            content: req.body.content.toString(),
+            created: new Date()
         };
-        console.log(mew);
+        mews
+            .insert(mew)
+            .then( createdMew => {
+                res.json(createdMew);
+            });
     } else {
         res.status(422);
         res.json({

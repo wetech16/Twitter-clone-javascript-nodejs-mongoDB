@@ -71,15 +71,15 @@ With the following features:
 * [x] If not valid
   * [x] Error code 422
   * [x] Invalid mew, must contain name and content
-* [ ] Setup DB Connection
-  * [ ] npm install monk
-  * [ ] connect to db
-  * [ ] create document collection (mews)
-* [ ] If Valid
-  * [ ] Create mew object with
-    * [ ] name, content, created_date
-  * [ ] Insert into DB
-  * [ ] Respond with created mew object
+* [x] Setup DB Connection
+  * [x] npm install monk
+  * [x] connect to db
+  * [x] create document collection (mews)
+* [x] If Valid
+  * [x] Create mew object with
+    * [x] name, content, created_date
+  * [x] Insert into DB
+  * [x] Respond with created mew object
 * ✅ Store data in a database
 
 ## Front-end
