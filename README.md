@@ -36,7 +36,7 @@ With the following features:
   * [x] Name
   * [x] Content
   * [x] u-full-width to both inputs
-* [ ] Listen for form submit
+* [x] Listen for form submit
 * [ ] Hide the form
 * [ ] Show loading spinner
 * [ ] Get data from form and log it
