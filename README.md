@@ -49,7 +49,8 @@ With the following features:
 * [x] npm init -y
 * [x] npm install express morgan
 * [x] Setup index.js
-* [ ] Add GET / route
+* [x] Add GET / route
+* [ ] Add nodemon: live server for node server: npm i --save-dev nodemon
 * [ ] Add POST /mews route
   * [ ] log out req.body
 
