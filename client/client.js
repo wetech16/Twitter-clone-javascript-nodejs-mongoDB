@@ -23,10 +23,12 @@ form.addEventListener('submit', (event) => {
             method: 'POST',
             body: JSON.stringify(mew),
             headers: {
-                'content-type': 'application/json'
+                'content-type': 'application/json',
             }
-        }).then(response => response.json())
-            .then (createdMew => {
+       
+        })
+        .then(response => response.json())
+        .then (createdMew => {
                 console.log(createdMew);
             });
 })

@@ -6,6 +6,7 @@ const monk = require('monk');
 const db = monk('localhost/meower');
 const mews = db.get('mews');
 
+
 app.use(cors());
 app.use(express.json());
 app.get('/', (req,res) => {
