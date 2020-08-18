@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const cors = require('cors');
-const monk = require('monk')
+const monk = require('monk');
 
 const db = monk('localhost/meower');
 const mews = db.get('mews');
