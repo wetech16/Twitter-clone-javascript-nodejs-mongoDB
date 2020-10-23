@@ -1,34 +1,29 @@
-const form = document.querySelector('form');
-const loading = document.querySelector('.loading');
-const API_URL ='http://localhost:5000/mews';
-
+const form = document.querySelector("form");
+const loading = document.querySelector(".loading");
+const API_URL = "http://localhost:5000/meower/mews";
 
 loading.style.display = "none";
 
-form.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const formDate = new FormData(form);
-    const name = formDate.get('name');
-    const content = formDate.get('content');
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const formDate = new FormData(form);
+  const name = formDate.get("name");
+  const content = formDate.get("content");
 
-    const mew = {
-        name,
-        content
-    }
-    form.style.display = 'none';
-    loading.style.display = "";
+  const mew = {
+    name,
+    content,
+  };
+  form.style.display = "none";
+  loading.style.display = "";
 
-    fetch(API_URL,
-        {
-            method: 'POST',
-            body: JSON.stringify(mew),
-            headers: {
-                'content-type': 'application/json',
-            }
-       
-        })
-        .then(response => response.json())
-        .then (createdMew => {
-                console.log(createdMew);
-            });
-})
+  fetch(API_URL, {
+    method: "POST",
+    body: JSON.stringify(mew),
+    headers: {
+      "content-type": "application/json",
+    },
+  }).then((createdMew) => {
+    console.log(createdMew);
+  });
+});
